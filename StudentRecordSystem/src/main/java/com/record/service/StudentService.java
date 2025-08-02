@@ -3,6 +3,7 @@ package com.record.service;
 import com.record.entity.Student;
 
 import java.util.List;
+//service interface
 
 public interface StudentService {
 
