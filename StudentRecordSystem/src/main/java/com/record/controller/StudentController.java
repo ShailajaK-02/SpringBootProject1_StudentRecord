@@ -26,7 +26,7 @@ public class StudentController {
         return new ResponseEntity<>("Student added", HttpStatus.CREATED);
     }
 
-    //api for get all student data
+    //api to get all data
     @GetMapping("/getAllData")
     public ResponseEntity<List<Student>> allStudentData(){
         List<Student> studentList = studentService.getAllStudent();
