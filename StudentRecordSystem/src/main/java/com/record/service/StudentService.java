@@ -13,4 +13,8 @@ public interface StudentService {
 
     Student getStudentById(int id);
 
+    String deleteStudent(int id);
+
+    Student updateStu(int id, Student newStu);
+
 }
