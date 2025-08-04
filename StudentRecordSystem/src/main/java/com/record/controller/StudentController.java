@@ -33,7 +33,7 @@ public class StudentController {
         return  new ResponseEntity<>(studentList, HttpStatus.OK);
     }
 
-    //Get Data by Id
+    //Get Data by id api 
     @GetMapping("/getById/{id}")
     public ResponseEntity<Student> getStudent(@PathVariable("id") int id){
         Student student= studentService.getStudentById(id);
