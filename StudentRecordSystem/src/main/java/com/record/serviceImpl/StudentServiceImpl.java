@@ -33,4 +33,21 @@ public class StudentServiceImpl implements StudentService
         Student stuById = repository.findById(id).orElseThrow(()-> new NullPointerException("Student with id not found "+id));
         return stuById;
     }
+
+    @Override
+    public String deleteStudent(int id) {
+        repository.deleteById(id);
+        return "Student deleted";
+    }
+
+    @Override
+    public Student updateStu(int id, Student newStu) {
+       Student student = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
+
+       student.setName(newStu.getName());
+       student.setMarks(newStu.getMarks());
+
+       Student updatedStu = repository.save(student);
+       return  updatedStu;
+    }
 }
