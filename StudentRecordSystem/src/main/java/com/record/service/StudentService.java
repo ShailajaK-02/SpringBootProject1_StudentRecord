@@ -16,6 +16,7 @@ public interface StudentService {
     //get by id method
     Student getStudentById(int id);
 
+    //delete student
     String deleteStudent(int id);
 
     Student updateStu(int id, Student newStu);
