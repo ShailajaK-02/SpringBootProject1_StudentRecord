@@ -13,6 +13,7 @@ public interface StudentService {
     //get all student method
     List<Student> getAllStudent();
 
+    //get by id method
     Student getStudentById(int id);
 
     String deleteStudent(int id);
