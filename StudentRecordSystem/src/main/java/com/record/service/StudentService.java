@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface StudentService {
 
+    //save method
     String  saveStudent(Student student);
 
     List<Student> getAllStudent();
