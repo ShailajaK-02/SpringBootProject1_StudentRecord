@@ -23,6 +23,7 @@ public class StudentServiceImpl implements StudentService
         return "Student added successfully";
     }
 
+    //getalldata method implemented
     @Override
     public List<Student> getAllStudent() {
         List<Student> studentList = repository.findAll();
