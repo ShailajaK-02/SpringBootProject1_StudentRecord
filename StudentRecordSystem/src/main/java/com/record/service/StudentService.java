@@ -10,6 +10,7 @@ public interface StudentService {
     //save method
     String  saveStudent(Student student);
 
+    //get all student method
     List<Student> getAllStudent();
 
     Student getStudentById(int id);
