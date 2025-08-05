@@ -37,6 +37,7 @@ public class StudentServiceImpl implements StudentService
         return stuById;
     }
 
+    //delete method implemented
     @Override
     public String deleteStudent(int id) {
         repository.deleteById(id);
