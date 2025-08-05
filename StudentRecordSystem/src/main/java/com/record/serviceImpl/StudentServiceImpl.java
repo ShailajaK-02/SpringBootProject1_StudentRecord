@@ -44,6 +44,7 @@ public class StudentServiceImpl implements StudentService
         return "Student deleted";
     }
 
+    //update method implemented
     @Override
     public Student updateStu(int id, Student newStu) {
        Student student = repository.findById(id).orElseThrow(()->new NullPointerException("Data not found"+id));
