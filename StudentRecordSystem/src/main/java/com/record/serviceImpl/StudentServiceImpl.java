@@ -30,6 +30,7 @@ public class StudentServiceImpl implements StudentService
         return studentList;
     }
 
+    //getbyid method implemented
     @Override
     public Student getStudentById(int id) {
         Student stuById = repository.findById(id).orElseThrow(()-> new NullPointerException("Student with id not found "+id));
