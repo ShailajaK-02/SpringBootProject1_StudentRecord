@@ -56,6 +56,8 @@ public class StudentController {
 
     //write jpql to get student with email
 
+    //write jpql to get student whose course is =?
+
 
 
 }
