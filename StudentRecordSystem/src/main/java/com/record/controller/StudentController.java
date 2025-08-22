@@ -54,5 +54,8 @@ public class StudentController {
         return new ResponseEntity<>(updatedStu,HttpStatus.OK);
     }
 
+    //write jpql to get student with email
+
+
 
 }
