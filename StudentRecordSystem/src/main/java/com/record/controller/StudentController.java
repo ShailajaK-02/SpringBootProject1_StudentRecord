@@ -55,7 +55,11 @@ public class StudentController {
     }
 
     //write jpql to get student with email
-
+    @GetMapping("/getStuByEmail/{email}")
+    public ResponseEntity<Student> getbyemail(String email){
+        Student stu = studentService.stuWithEmail(email);
+        return new ResponseEntity<>(stu,HttpStatus.OK);
+    }
     //write jpql to get student whose course is =?
 
 
