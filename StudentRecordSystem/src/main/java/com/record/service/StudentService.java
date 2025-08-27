@@ -22,4 +22,7 @@ public interface StudentService {
     //update student
     Student updateStu(int id, Student newStu);
 
+    //get student with email
+    Student stuWithEmail(String email);
+
 }
