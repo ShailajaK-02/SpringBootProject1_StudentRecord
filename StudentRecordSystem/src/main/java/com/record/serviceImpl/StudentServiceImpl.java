@@ -55,4 +55,10 @@ public class StudentServiceImpl implements StudentService
        Student updatedStu = repository.save(student);
        return  updatedStu;
     }
+
+    @Override
+    public Student stuWithEmail(String email) {
+        Student student = repository.findStuByEmail(email);
+        return student;
+    }
 }
