@@ -13,7 +13,7 @@ public interface StudentService {
     //get all student method
     List<Student> getAllStudent();
 
-    //get by id method
+    //get by id method added
     Student getStudentById(int id);
 
     //delete student
