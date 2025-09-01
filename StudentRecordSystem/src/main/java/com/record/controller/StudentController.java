@@ -40,21 +40,21 @@ public class StudentController {
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
 
-    //delete api
+    //delete api added
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteStu(@PathVariable("id") int id){
         String msg = studentService.deleteStudent(id);
         return new ResponseEntity<>(msg, HttpStatus.OK);
     }
 
-    //update api
+    //update api aaded
     @PutMapping("/updateStu/{id}")
     public ResponseEntity<Student> updateStu(@PathVariable("id") int id,@RequestBody Student student){
         Student updatedStu = studentService.updateStu(id,student);
         return new ResponseEntity<>(updatedStu,HttpStatus.OK);
     }
 
-    //write jpql to get student with email
+    //write jpql to get student with email added
     @GetMapping("/getStuByEmail/{email}")
     public ResponseEntity<Student> getbyemail(String email){
         Student stu = studentService.stuWithEmail(email);
