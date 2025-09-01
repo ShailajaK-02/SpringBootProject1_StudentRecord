@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Integer>
 {
-    //jpql query to get student with email
+    //jpql query to get student with email id
     @Query("SELECT s from Student s WHERE s.email = :email")
     Student findStuByEmail(@Param("email") String email);
 }
