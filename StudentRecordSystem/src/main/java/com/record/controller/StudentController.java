@@ -18,7 +18,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    //api to add data into db
+    //api to add data in db
     @PostMapping("/addStudent")
     public ResponseEntity<String> addStudent(@RequestBody Student student){
         System.err.println(student);
